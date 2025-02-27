@@ -1,13 +1,17 @@
 import Header from "@components/Header";
 import type React from "react";
 import { SafeAreaView, View } from "react-native";
+import { ThemeProvider } from "styled-components";
+import { Theme } from "./types/theme";
 
 function App(): React.JSX.Element {
 	return (
-		<View>
-			<SafeAreaView />
-			<Header />
-		</View>
+		<ThemeProvider theme={Theme}>
+			<View>
+				<SafeAreaView />
+				<Header />
+			</View>
+		</ThemeProvider>
 	);
 }
 

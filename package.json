@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/styled-components-react-native": "^5.2.5",
+    "babel-plugin-module-resolver": "^5.0.2",
     "lint-staged": "^15.4.3",
     "lucide-react-native": "^0.476.0",
     "react": "19.0.0",
@@ -43,9 +44,9 @@
     "node": ">=18"
   },
   "lint-staged": {
-		"*.js": "biome check --write",
-		"*.ts": "biome check --write",
-		"*.tsx": "biome check --write",
-		"*.jsx": "biome check --write"
-	}
+    "*.js": "biome check --write",
+    "*.ts": "biome check --write",
+    "*.tsx": "biome check --write",
+    "*.jsx": "biome check --write"
+  }
 }
